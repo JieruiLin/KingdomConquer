@@ -72,10 +72,6 @@ def solve(list_of_kingdom_names, starting_kingdom, adjacency_matrix, params=[]):
     Output:
         Return 2 things. The first is a list of kingdoms representing the walk, and the second is the set of kingdoms that are conquered
     """
-    
-    if(len(list_of_kingdom_names)<200):
-        return [1],[1]
-    
     conquer_time=[]
     # Instantiate a mixed-integer solver, naming it SolveIntegerProblem.
     solver = pywraplp.Solver('SolveIntegerProblem',
